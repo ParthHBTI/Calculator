@@ -35,22 +35,22 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        b1.layer.cornerRadius = 25.0
-        b2.layer.cornerRadius = 25.0
-        b3.layer.cornerRadius = 25.0
-        b4.layer.cornerRadius = 25.0
-        b5.layer.cornerRadius = 25.0
-        b6.layer.cornerRadius = 25.0
-        b7.layer.cornerRadius = 25.0
-        b8.layer.cornerRadius = 25.0
-        b9.layer.cornerRadius = 25.0
-        b0.layer.cornerRadius = 25.0
-        bAC.layer.cornerRadius = 25.0
-        bAdd.layer.cornerRadius = 25.0
-        bMul.layer.cornerRadius = 25.0
-        bSub.layer.cornerRadius = 25.0
-        bDiv.layer.cornerRadius = 25.0
-        bEql.layer.cornerRadius = 25.0
+//        b1.layer.cornerRadius = 25.0
+//        b2.layer.cornerRadius = 25.0
+//        b3.layer.cornerRadius = 25.0
+//        b4.layer.cornerRadius = 25.0
+//        b5.layer.cornerRadius = 25.0
+//        b6.layer.cornerRadius = 25.0
+//        b7.layer.cornerRadius = 25.0
+//        b8.layer.cornerRadius = 25.0
+//        b9.layer.cornerRadius = 25.0
+//        b0.layer.cornerRadius = 25.0
+//        bAC.layer.cornerRadius = 25.0
+//        bAdd.layer.cornerRadius = 25.0
+//        bMul.layer.cornerRadius = 25.0
+//        bSub.layer.cornerRadius = 25.0
+//        bDiv.layer.cornerRadius = 25.0
+//        bEql.layer.cornerRadius = 25.0
         // Do any additional setup after loading the view, typically from a nib.
     }
 
