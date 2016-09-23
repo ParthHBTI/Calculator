@@ -35,6 +35,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        var frameRect:  CGRect = screenText.frame
+        frameRect.size.height = 100
+        screenText.frame = frameRect
 //        b1.layer.cornerRadius = 25.0
 //        b2.layer.cornerRadius = 25.0
 //        b3.layer.cornerRadius = 25.0
