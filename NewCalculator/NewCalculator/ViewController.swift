@@ -35,6 +35,38 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      /*  b1.layer.borderWidth = 0.5
+        b1.layer.borderColor = UIColor.grayColor().CGColor
+        b2.layer.borderWidth = 1.0
+        b2.layer.borderColor = UIColor.grayColor().CGColor
+        b3.layer.borderWidth = 0.5
+        b3.layer.borderColor = UIColor.grayColor().CGColor
+        b4.layer.borderWidth = 0.5
+        b4.layer.borderColor = UIColor.grayColor().CGColor
+        b5.layer.borderWidth = 1.0
+        b5.layer.borderColor = UIColor.grayColor().CGColor
+        b6.layer.borderWidth = 0.5
+        b6.layer.borderColor = UIColor.grayColor().CGColor
+        b7.layer.borderWidth = 0.5
+        b7.layer.borderColor = UIColor.grayColor().CGColor
+        b8.layer.borderWidth = 1.0
+        b8.layer.borderColor = UIColor.grayColor().CGColor
+        b9.layer.borderWidth = 0.5
+        b9.layer.borderColor = UIColor.grayColor().CGColor
+        b0.layer.borderWidth = 0.5
+        b0.layer.borderColor = UIColor.grayColor().CGColor
+        bAdd.layer.borderWidth = 0.5
+        bAdd.layer.borderColor = UIColor.grayColor().CGColor
+        bDiv.layer.borderWidth = 0.5
+        bDiv.layer.borderColor = UIColor.grayColor().CGColor
+        bMul.layer.borderWidth = 0.5
+        bMul.layer.borderColor = UIColor.grayColor().CGColor
+        bSub.layer.borderWidth = 0.5
+        bSub.layer.borderColor = UIColor.grayColor().CGColor
+        bAC.layer.borderWidth = 0.5
+        bAC.layer.borderColor = UIColor.grayColor().CGColor
+        bEql.layer.borderWidth = 1.0
+        bEql.layer.borderColor = UIColor.grayColor().CGColor*/
         var frameRect:  CGRect = screenText.frame
         frameRect.size.height = 100
         screenText.frame = frameRect
