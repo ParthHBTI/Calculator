@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					045826B61D9104DD0089DA12 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 7438FZYKTN;
 					};
 				};
 			};
@@ -248,7 +249,9 @@
 		045826CA1D9104DD0089DA12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 7438FZYKTN;
 				INFOPLIST_FILE = NewCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = KloudRac.NewCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -258,7 +261,9 @@
 		045826CB1D9104DD0089DA12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 7438FZYKTN;
 				INFOPLIST_FILE = NewCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = KloudRac.NewCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";

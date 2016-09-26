@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Darwin
 class ViewController: UIViewController {
 
     @IBOutlet weak var screenText: UITextField!
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     
     var method = Int()
     var totalRunning = Float()
-    
+    var powerResult = Int()
     override func viewDidLoad() {
         super.viewDidLoad()
       /*  b1.layer.borderWidth = 0.5
@@ -159,6 +159,16 @@ class ViewController: UIViewController {
             case 4:
                 totalRunning = totalRunning-Float(selectNumber)
                 break;
+            case 5:
+                totalRunning = totalRunning/100*Float(selectNumber)
+                break;
+            case 6:
+                powerResult = Int(pow(Double(totalRunning),Double(selectNumber)))
+                totalRunning = Float(powerResult)
+                break;
+            case 7:
+                totalRunning = sqrt(totalRunning)
+                break;
             default :
                 break;
             }
@@ -192,6 +202,16 @@ class ViewController: UIViewController {
             case 4:
                 totalRunning = totalRunning - Float(selectNumber)
                 break;
+            case 5:
+                totalRunning = totalRunning/100*Float(selectNumber)
+                break;
+            case 6:
+                powerResult = Int(pow(Double(totalRunning),Double(selectNumber)))
+                totalRunning = Float(powerResult)
+                break;
+            case 7:
+                totalRunning = sqrt(totalRunning)
+                break;
             default :
                 break;
             }
@@ -220,6 +240,16 @@ class ViewController: UIViewController {
                 break;
             case 4:
                 totalRunning = totalRunning-Float(selectNumber)
+                break;
+            case 5:
+                totalRunning = totalRunning/100*Float(selectNumber)
+                break;
+            case 6:
+                powerResult = Int(pow(Double(totalRunning),Double(selectNumber)))
+                totalRunning = Float(powerResult)
+                break;
+            case 7:
+                totalRunning = sqrt(totalRunning)
                 break;
             default :
                 break;
@@ -251,6 +281,16 @@ class ViewController: UIViewController {
             case 4:
                 totalRunning = totalRunning-Float(selectNumber)
                 break;
+            case 5:
+                totalRunning = totalRunning/100*Float(selectNumber)
+                break;
+            case 6:
+                powerResult = Int(pow(Double(totalRunning),Double(selectNumber)))
+                totalRunning = Float(powerResult)
+                break;
+            case 7:
+                totalRunning = sqrt(totalRunning)
+                break;
             default :
                 break;
             }
@@ -280,6 +320,16 @@ class ViewController: UIViewController {
             case 4:
                 totalRunning = totalRunning-Float(selectNumber)
                 break;
+            case 5:
+                totalRunning = totalRunning/100*Float(selectNumber)
+                break;
+            case 6:
+                powerResult = Int(pow(Double(totalRunning),Double(selectNumber)))
+                totalRunning = Float(powerResult)
+                break;
+            case 7:
+                totalRunning = sqrt(totalRunning)
+                break;
             default :
                 break;
             }
@@ -287,5 +337,126 @@ class ViewController: UIViewController {
         method = 4
         selectNumber = 0
     }
+    @IBAction func percentageAction(sender: AnyObject) {
+        if(totalRunning == 0)
+        {
+            totalRunning = Float(selectNumber)
+        }
+        else
+        {
+            switch(method)
+            {
+            case 1:
+                totalRunning = totalRunning*Float(selectNumber)
+                break;
+            case 2:
+                totalRunning = totalRunning/Float(selectNumber)
+                break;
+            case 3:
+                totalRunning = totalRunning+Float(selectNumber)
+                break;
+            case 4:
+                totalRunning = totalRunning-Float(selectNumber)
+                break;
+            case 5:
+                totalRunning = totalRunning/100*Float(selectNumber)
+                break;
+            case 6:
+                powerResult = Int(pow(Double(totalRunning),Double(selectNumber)))
+                totalRunning = Float(powerResult)
+                break;
+            case 7:
+                totalRunning = sqrt(totalRunning)
+                break;
+            default :
+                break;
+            }
+        }
+        method = 5
+        selectNumber = 0
+    }
+    
+    @IBAction func pointAction(sender: AnyObject) {
+    }
+    
+    @IBAction func powerAction(sender: AnyObject) {
+        if(totalRunning == 0)
+        {
+            totalRunning = Float(selectNumber)
+        }
+        else
+        {
+            switch(method)
+            {
+            case 1:
+                totalRunning = totalRunning*Float(selectNumber)
+                break;
+            case 2:
+                totalRunning = totalRunning/Float(selectNumber)
+                break;
+            case 3:
+                totalRunning = totalRunning+Float(selectNumber)
+                break;
+            case 4:
+                totalRunning = totalRunning-Float(selectNumber)
+                break;
+            case 5:
+                totalRunning = totalRunning/100*Float(selectNumber)
+                break;
+            case 6:
+                powerResult = Int(pow(Double(totalRunning),Double(selectNumber)))
+                totalRunning = Float(powerResult)
+                break;
+            case 7:
+                totalRunning = sqrt(totalRunning)
+                break;
+            default :
+                break;
+            }
+        }
+        method = 6
+        selectNumber = 0
+    }
+    
+    @IBAction func rootAction(sender: AnyObject) {
+        if(totalRunning == 0)
+        {
+            totalRunning = Float(selectNumber)
+        }
+        else
+        {
+            switch(method)
+            {
+            case 1:
+                totalRunning = totalRunning*Float(selectNumber)
+                break;
+            case 2:
+                totalRunning = totalRunning/Float(selectNumber)
+                break;
+            case 3:
+                totalRunning = totalRunning+Float(selectNumber)
+                break;
+            case 4:
+                totalRunning = totalRunning-Float(selectNumber)
+                break;
+            case 5:
+                totalRunning = totalRunning/100*Float(selectNumber)
+                break;
+            case 6:
+                powerResult = Int(pow(Double(totalRunning),Double(selectNumber)))
+                totalRunning = Float(powerResult)
+                break;
+            case 7:
+                totalRunning = sqrt(totalRunning)
+                break;
+            default :
+                break;
+            }
+        }
+        method = 7
+        selectNumber = 0
+    }
+   
+    
 }
 
