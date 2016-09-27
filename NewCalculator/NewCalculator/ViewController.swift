@@ -33,6 +33,7 @@ class ViewController: UIViewController {
     var method = Int()
     var totalRunning = Float()
     var powerResult = Int()
+    var userInTheMiddleOfEnteringDecimal = Bool()
     override func viewDidLoad() {
         super.viewDidLoad()
       /*  b1.layer.borderWidth = 0.5
@@ -377,6 +378,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pointAction(sender: AnyObject) {
+        if !userInTheMiddleOfEnteringDecimal {
+            userInTheMiddleOfEnteringDecimal = true
+            screenText.text = screenText.text.append('.')
+        }
+
     }
     
     @IBAction func powerAction(sender: AnyObject) {
