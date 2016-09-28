@@ -8,7 +8,7 @@
 
 import UIKit
 import Darwin
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var screenText: UITextField!
     @IBOutlet weak var b1: UIButton!
@@ -33,9 +33,12 @@ class ViewController: UIViewController {
     var method = Int()
     var totalRunning = Float()
     var powerResult = Int()
-    var userInTheMiddleOfEnteringDecimal = Bool()
+    var digit = String()
+    var flag = Bool()
+    var checkFlag = Bool()
     override func viewDidLoad() {
         super.viewDidLoad()
+        screenText.delegate = self
       /*  b1.layer.borderWidth = 0.5
         b1.layer.borderColor = UIColor.grayColor().CGColor
         b2.layer.borderWidth = 1.0
@@ -139,6 +142,15 @@ class ViewController: UIViewController {
         screenText.text = String(selectNumber)
     }
     
+    func checkDecimal() {
+        if checkFlag {
+            screenText.text = String(totalRunning) + String(selectNumber/10)
+            checkFlag = false
+        } else {
+            screenText.text = String(selectNumber)
+        }
+    }
+    
     @IBAction func actionResult(sender: AnyObject) {
         if(totalRunning == 0)
         {
@@ -170,14 +182,21 @@ class ViewController: UIViewController {
             case 7:
                 totalRunning = sqrt(totalRunning)
                 break;
+            case 8:
+                   digit = digit.stringByAppendingString("\(selectNumber)")
+                   screenText.text = digit
+                   flag = true
+                    break;
             default :
                 break;
             }
         }
         method = 0
         selectNumber = 0
+        if !flag {
         screenText.text = String(totalRunning)
-
+        }
+        flag = false
     }
     
     @IBAction func action0(sender: AnyObject) {
@@ -378,11 +397,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pointAction(sender: AnyObject) {
-        if !userInTheMiddleOfEnteringDecimal {
-            userInTheMiddleOfEnteringDecimal = true
-            screenText.text = screenText.text.append('.')
-        }
-
+        digit = String(selectNumber ) + "."
+       screenText.text = screenText.text?.stringByAppendingString(".")
+        totalRunning = Float(screenText.text!)!
+        method = 8
+        selectNumber = 0
     }
     
     @IBAction func powerAction(sender: AnyObject) {
@@ -462,7 +481,6 @@ class ViewController: UIViewController {
         method = 7
         selectNumber = 0
     }
-   
-    
+        
 }
 
