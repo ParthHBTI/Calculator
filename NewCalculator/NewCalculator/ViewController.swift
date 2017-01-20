@@ -31,6 +31,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var selectNumber = Int()
     
     var method = Int()
+    
     var totalRunning = Float()
     var powerResult = Int()
     var digit = String()
